@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0F17737297A9E9CE4C29390F /* Pods_SBLoan_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBLoan_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DFA334CA9CF88B9AEFD823E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2DFA334CA9CF88B9AEFD823E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SBLoan_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SBLoan_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +41,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9041C8E05AD78254D62CD6D4 /* Pods-SBLoan_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBLoan_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SBLoan_Tests/Pods-SBLoan_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9268D514FAAD9F84CBD97AB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9268D514FAAD9F84CBD97AB5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AC47A304213674956603EF97 /* Pods_SBLoan_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SBLoan_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8905887622D219D3690FB0F /* Pods-SBLoan_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBLoan_Example.debug.xcconfig"; path = "Target Support Files/Pods-SBLoan_Example/Pods-SBLoan_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C27089ACD05011633A6FD7CC /* Pods-SBLoan_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBLoan_Example.release.xcconfig"; path = "Target Support Files/Pods-SBLoan_Example/Pods-SBLoan_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C2BBEBACC7B763AEB2316AAC /* Pods-SBLoan_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SBLoan_Tests.release.xcconfig"; path = "Target Support Files/Pods-SBLoan_Tests/Pods-SBLoan_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EAA82662BF432E3712C9E4E9 /* SBLoan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SBLoan.podspec; path = ../SBLoan.podspec; sourceTree = "<group>"; };
+		EAA82662BF432E3712C9E4E9 /* SBLoan.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SBLoan.podspec; path = ../SBLoan.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				9041C8E05AD78254D62CD6D4 /* Pods-SBLoan_Tests.debug.xcconfig */,
 				C2BBEBACC7B763AEB2316AAC /* Pods-SBLoan_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CTDN3273R3;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CTDN3273R3;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,7 +480,9 @@
 			baseConfigurationReference = B8905887622D219D3690FB0F /* Pods-SBLoan_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CTDN3273R3;
 				INFOPLIST_FILE = SBLoan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +497,9 @@
 			baseConfigurationReference = C27089ACD05011633A6FD7CC /* Pods-SBLoan_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CTDN3273R3;
 				INFOPLIST_FILE = SBLoan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9041C8E05AD78254D62CD6D4 /* Pods-SBLoan_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = CTDN3273R3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +523,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +537,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C2BBEBACC7B763AEB2316AAC /* Pods-SBLoan_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = CTDN3273R3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
