@@ -8,12 +8,20 @@
 import SwiftUI
 
 public struct SBLoanView: View {
+    let loanBackground = Color(red: 240.0 / 255.0,
+                               green: 240.0 / 255.0,
+                               blue: 240.0 / 255.0)
+    
+    let customYellow = Color(red: 255.0 / 255.0,
+                             green: 186.0 / 255.0,
+                             blue: 5.0 / 255.0)
+    
     
     public init() {}
     
     public var body: some View {
         ZStack(alignment: .top) {
-            LinearGradient(gradient: Gradient(colors: [Color.customYellow, Color.loanBackground]), startPoint: .top, endPoint: .bottom)
+            LinearGradient(gradient: Gradient(colors: [customYellow, loanBackground]), startPoint: .top, endPoint: .bottom)
             
             VStack {
                 headerView
