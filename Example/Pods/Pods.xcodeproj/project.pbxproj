@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D46664F22E22C9EC023B99A2F3AC5E7 /* Pods-SBLoan_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC2D0A7AAABC22DB108837AECFAD8D2 /* Pods-SBLoan_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		355118C88EE09E69AAF6E343DF123E0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		42BE62992CCFE8B600F6C217 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BE62982CCFE8B600F6C217 /* Color+.swift */; };
-		42BE629A2CCFEA9300F6C217 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BE62982CCFE8B600F6C217 /* Color+.swift */; };
+		42BE62A32CD02E3000F6C217 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BE62A02CD02E3000F6C217 /* Color+.swift */; };
+		42BE62A42CD02E3000F6C217 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BE62A02CD02E3000F6C217 /* Color+.swift */; };
 		42E317F62CCD375C008EC9AD /* SBLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E317F52CCD375C008EC9AD /* SBLoanView.swift */; };
 		42E317F72CCD375C008EC9AD /* SBLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E317F52CCD375C008EC9AD /* SBLoanView.swift */; };
 		4AA66A4462F734A7C4D0072BFCA6795A /* Pods-SBLoan_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D49B63C316229EFAAD6203319E95AA89 /* Pods-SBLoan_Tests-dummy.m */; };
@@ -52,7 +52,7 @@
 		380F80C4E7109ED4C15E0F45655AC87E /* Pods-SBLoan_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SBLoan_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3C9D4B6225EDCCCD5C72BD3B442125F4 /* Pods-SBLoan_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SBLoan_Tests-Info.plist"; sourceTree = "<group>"; };
 		420AA0294728FC400F720E360429FA74 /* Pods-SBLoan_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SBLoan_Tests.modulemap"; sourceTree = "<group>"; };
-		42BE62982CCFE8B600F6C217 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		42BE62A02CD02E3000F6C217 /* Color+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		42E317F52CCD375C008EC9AD /* SBLoanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBLoanView.swift; path = Classes/SBLoanView.swift; sourceTree = "<group>"; };
 		53C2A16E4FA7E370A806915D631501EE /* SBLoan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SBLoan.modulemap; sourceTree = "<group>"; };
 		553A44FEFF7E274DF684C16E0560D1BB /* Pods-SBLoan_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SBLoan_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,20 +104,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42BE62962CCFE89A00F6C217 /* Utils */ = {
+		42BE62A12CD02E3000F6C217 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				42BE62972CCFE8A600F6C217 /* Extensions */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		42BE62972CCFE8A600F6C217 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				42BE62982CCFE8B600F6C217 /* Color+.swift */,
+				42BE62A02CD02E3000F6C217 /* Color+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42BE62A22CD02E3000F6C217 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42BE62A12CD02E3000F6C217 /* Extensions */,
+			);
+			name = Utils;
+			path = Classes/Utils;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -131,8 +132,8 @@
 		78F95950BD5C48F492E07AE64A4D9C41 /* SBLoan */ = {
 			isa = PBXGroup;
 			children = (
+				42BE62A22CD02E3000F6C217 /* Utils */,
 				42E317F52CCD375C008EC9AD /* SBLoanView.swift */,
-				42BE62962CCFE89A00F6C217 /* Utils */,
 				79FE4EE5BEC26B17AD304E8BA1DB62B1 /* Pod */,
 				B175872B164FC96D032B32A45E1C81C7 /* Support Files */,
 			);
@@ -397,7 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				643599053E2FB82BBF562D6B230A3462 /* SBLoan-dummy.m in Sources */,
-				42BE629A2CCFEA9300F6C217 /* Color+.swift in Sources */,
+				42BE62A42CD02E3000F6C217 /* Color+.swift in Sources */,
 				42E317F72CCD375C008EC9AD /* SBLoanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				600D7C231C301BCC005E154F2C58CE2B /* Pods-SBLoan_Example-dummy.m in Sources */,
-				42BE62992CCFE8B600F6C217 /* Color+.swift in Sources */,
+				42BE62A32CD02E3000F6C217 /* Color+.swift in Sources */,
 				42E317F62CCD375C008EC9AD /* SBLoanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
