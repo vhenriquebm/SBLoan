@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SBLoan'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.swift_versions = '5.0'
   s.summary          = 'Module used by the SwiftBank app for the loan feature.'
 
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/vhenriquebm/SBLoan.git', :tag => s.version.to_s }
   
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
 
   s.source_files = 'Classes/**/*'
 
