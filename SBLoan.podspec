@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SBLoan'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.swift_versions = '5.0'
   s.summary          = 'Module used by the SwiftBank app for the loan feature.'
 
